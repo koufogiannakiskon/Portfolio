@@ -1,0 +1,35 @@
+.li_javascript:hover {
+    transition: 0.2s;
+    color: #F0DB4f;
+    cursor: pointer;
+}
+
+.li_html5:hover {
+    transition: 0.2s;
+    color: #e34c26;
+    cursor: pointer;
+}
+
+.li_css3:hover {
+    transition: 0.2s;
+    color: #264de4;
+    cursor: pointer;
+}
+
+.li_node:hover {
+    transition: 0.2s;
+    color: #68a063;
+    cursor: pointer;
+}
+
+.li_react:hover {
+    transition: 0.2s;
+    color: #61dbfb;
+    cursor: pointer;
+}
+
+.li_bootstrap:hover {
+    transition: 0.2s;
+    color: #7110f5;
+    cursor: pointer;
+}

@@ -1,32 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Roboto+Mono&display=swap');
+
 body {
-    background-color: #F8EDE3;
+    font-family: 'PT Sans', sans-serif;
+    background-color: #edede9;
+}
+
+p {
+    font-size: 17px;
+}
+
+.skills>li,
+a {
+    all: unset;
+}
+
+
+li {
+    list-style-type: none;
+}
+
+.navbar,
+.container-fluid {
+    margin: 0;
+    padding: 0;
 }
 
 .nav-link {
     color: #3D3C42;
 }
 
-h1 {
-    font-size: medium;
+.navbar-nav {
+    padding-right: 50px;
 }
 
-h2 {
-    font-size: 40px;
+.hello_world {
+    font-family: 'Roboto Mono', monospace;
     font-weight: 600;
 }
 
+.introduce {
+    font-size: medium;
+    margin-bottom: 0;
+}
+
+.my_name {
+    font-size: 45px;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+.heading {
+    font-size: 45px;
+}
+
 h3 {
-    font-size: xx-large;
+    font-size: 45px;
     font-weight: 600;
     opacity: 0.7;
 }
 
-.container {
-    height: 700px;
+.container-lg>.row {
+    margin-top: 50px;
+    padding: 100px 20px;
 }
 
-.container>.row {
-    padding: 100px 20px;
+.short_sum {
+    margin-top: 20px;
 }
 
 .first_impression {
@@ -34,17 +73,105 @@ h3 {
 }
 
 div>img {
+    margin-top: 20px;
     border-radius: 50%;
     border: 2px solid #7D6E83;
 }
 
 .intrasoft {
     text-decoration: none;
-    color: black;
-
+    color: rgb(11, 16, 74);
+    cursor: pointer;
 }
 
 .intrasoft:hover {
     text-decoration: none;
     color: #3D3C42;
+}
+
+/* Contact Info*/
+.contact-left {
+    margin-top: 30px;
+}
+
+.contact_info {
+    margin: 30px 0 30px 0;
+    padding-right: 0%;
+}
+
+.email {
+    color: #DB4437;
+    cursor: pointer;
+    max-width: 300px;
+}
+
+.linkedin {
+    color: #0A66C2;
+    cursor: pointer;
+    max-width: 200px;
+}
+
+.github {
+    color: #171515;
+    cursor: pointer;
+    max-width: 150px;
+}
+
+.contact_form_field {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contact_section {
+    position: absolute;
+    margin-top: 30px;
+    width: 90%;
+    padding: 0 20px;
+    max-width: 500px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.contact_form_container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+}
+
+.contact_form_input,
+.contact_form_msg {
+    width: 70%;
+    margin: 10px 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid #edede9;
+    padding: 5px;
+    color: #171515
+}
+
+.contact_form_msg {
+    height: 100px;
+}
+
+.contact_form_btn {
+    width: 70%;
+    background: #edede9;
+    text-align: center;
+    padding: 15px;
+    border-radius: 3px;
+    color: black;
+    cursor: pointer;
+
+}
+
+textarea,
+input {
+    outline: none;
 }
