@@ -1,35 +1,59 @@
-.li_javascript:hover {
+.li_javascript {
     transition: 0.2s;
-    color: #F0DB4f;
+    color: #d7c54f;
+}
+
+.li_javascript:hover {
     cursor: pointer;
+    filter: drop-shadow(3px 3px 2px #c9ba52);
+}
+
+.li_html5 {
+    transition: 0.2s;
+    color: #e34c26;
 }
 
 .li_html5:hover {
-    transition: 0.2s;
-    color: #e34c26;
     cursor: pointer;
+    filter: drop-shadow(3px 3px 2px #953118);
+}
+
+.li_css3 {
+    transition: 0.2s;
+    color: #264de4;
 }
 
 .li_css3:hover {
-    transition: 0.2s;
-    color: #264de4;
     cursor: pointer;
+    filter: drop-shadow(3px 3px 2px #132778);
+}
+
+.li_node {
+    transition: 0.2s;
+    color: #68a063;
 }
 
 .li_node:hover {
-    transition: 0.2s;
-    color: #68a063;
     cursor: pointer;
+    filter: drop-shadow(3px 3px 2px #466b42);
+}
+
+.li_react {
+    transition: 0.2s;
+    color: #56c3de;
 }
 
 .li_react:hover {
-    transition: 0.2s;
-    color: #61dbfb;
     cursor: pointer;
+    filter: drop-shadow(2px 2px 2px #4babc3fa);
+}
+
+.li_bootstrap {
+    transition: 0.2s;
+    color: #7110f5;
 }
 
 .li_bootstrap:hover {
-    transition: 0.2s;
-    color: #7110f5;
     cursor: pointer;
+    filter: drop-shadow(3px 3px 2px #440a95);
 }
