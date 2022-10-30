@@ -71,10 +71,6 @@ img.logo {
   left: 0;
 }
 
-.navbar-nav {
-  padding-right: 50px;
-}
-
 .hello_world {
   font-family: "Roboto Mono", monospace;
   font-weight: 600;
@@ -297,4 +293,16 @@ footer {
 footer p {
   font-size: 14px;
   color: #000000;
+}
+
+@media (max-width: 400px) {
+  nav {
+    font-size: 13px;
+  }
+  img.logo {
+    margin-top: 0;
+    margin-left: 5px;
+    width: 40px;
+    height: 40px;
+  }
 }
