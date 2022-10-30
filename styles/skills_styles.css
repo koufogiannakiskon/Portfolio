@@ -1,0 +1,59 @@
+.li_javascript {
+    transition: 0.2s;
+    color: #d7c54f;
+}
+
+.li_javascript:hover {
+    cursor: pointer;
+    filter: drop-shadow(3px 3px 2px #c9ba52);
+}
+
+.li_html5 {
+    transition: 0.2s;
+    color: #e34c26;
+}
+
+.li_html5:hover {
+    cursor: pointer;
+    filter: drop-shadow(3px 3px 2px #953118);
+}
+
+.li_css3 {
+    transition: 0.2s;
+    color: #264de4;
+}
+
+.li_css3:hover {
+    cursor: pointer;
+    filter: drop-shadow(3px 3px 2px #132778);
+}
+
+.li_node {
+    transition: 0.2s;
+    color: #68a063;
+}
+
+.li_node:hover {
+    cursor: pointer;
+    filter: drop-shadow(3px 3px 2px #466b42);
+}
+
+.li_react {
+    transition: 0.2s;
+    color: #56c3de;
+}
+
+.li_react:hover {
+    cursor: pointer;
+    filter: drop-shadow(2px 2px 2px #4babc3fa);
+}
+
+.li_bootstrap {
+    transition: 0.2s;
+    color: #7110f5;
+}
+
+.li_bootstrap:hover {
+    cursor: pointer;
+    filter: drop-shadow(3px 3px 2px #440a95);
+}

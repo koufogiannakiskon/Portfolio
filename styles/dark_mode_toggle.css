@@ -1,0 +1,109 @@
+.darkToggle input[type="checkbox"] {
+  display: none;
+}
+
+.darkToggle label {
+  margin: 15px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgb(28, 26, 45);
+  border: 1px solid rgb(187, 187, 187);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.darkToggle label::before {
+  font: var(--fa-font-solid);
+  content: "\f186";
+  color: white;
+  transition: 0.5s;
+}
+
+.darkToggle input[type="checkbox"]:checked ~ label {
+  background-color: white;
+  border: 1px solid rgb(28, 26, 45);
+}
+
+.darkToggle input[type="checkbox"]:checked ~ label::before {
+  font: var(--fa-font-solid);
+  content: "\f185";
+  color: orange;
+  transform: rotateY(180deg);
+}
+
+body.dark-theme {
+  background-color: #2c394b;
+  color: aliceblue;
+}
+
+/* Navbar: */
+.navbar.dark .container-fluid {
+  background-color: #082032;
+}
+
+img.logo {
+  content: url("/imgs/KK_black_letters.png");
+}
+
+nav.dark img.logo {
+  content: url("/imgs/KK_white_letters.png");
+  transition: 0.5s;
+}
+
+nav.dark .nav-link {
+  color: white;
+}
+
+nav.dark .nav-link::before {
+  background: white;
+}
+
+/* Image: */
+
+body.dark-theme .intrasoft {
+  text-decoration: none;
+  color: rgb(146, 152, 213);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+/* Contact: */
+body.dark-theme .email {
+  filter: drop-shadow(1px 1px 0px #bd8782);
+  transition: all 0.5s ease-in;
+}
+
+body.dark-theme .linkedin {
+  filter: drop-shadow(1px 1px 0px #6a8db0);
+  transition: all 0.5s ease-in;
+}
+
+body.dark-theme .github {
+  filter: drop-shadow(1px 1px 0px #a5a4a4);
+  transition: all 0.5s ease-in;
+}
+
+body.dark-theme input,
+body.dark-theme textarea {
+  color: white;
+  transition: all 0.5s;
+}
+
+body.dark-theme .contact_section {
+  background-color: rgba(170, 174, 165, 0.4);
+  box-shadow: 5px 5px 10px rgba(92, 92, 97, 0.3);
+}
+
+/* Contact: */
+footer.dark {
+  background-color: #082032;
+  transition: all 0.5s;
+}
+
+footer.dark p {
+  color: white;
+}

@@ -5,20 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Konstantinos</title>
+    <title>Konstantinos Κ. </title>
     <script src="https://kit.fontawesome.com/20fdb4c944.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="skills_styles.css">
-    <link rel="stylesheet" href="dark_mode_toggle/dark_mode_toggle.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/skills_styles.css">
+    <link rel="stylesheet" href="styles/carousel_styles.css">
+    <link rel="stylesheet" href="styles/dark_mode_toggle.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="js/submitForm.js"></script>
 
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md bg-light fixed-top">
+
+    <nav class="navbar navbar-expand light fixed-top ">
         <div class="container-fluid">
-            Konstantinos Koufogiannakis
+            <a class="home_link" href="#Home">
+                <img class='logo' src="" alt="Logo">
+            </a>
 
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
@@ -33,12 +39,14 @@
                     </li>
                 </ul>
                 <div class="darkToggle">
+                    <input type="checkbox" name="checkbox" id="darkmode">
+                    <label for="darkmode"></label>
                 </div>
             </div>
         </div>
         </div>
     </nav>
-    <div class="container-lg">
+    <div class="container-lg" id="Home">
         <div class="row first_row">
             <div class="col-md-7 first_impression">
                 <h1 class="hello_world">Hello World!</h1>
@@ -46,45 +54,37 @@
                 <h2 class="my_name">Konstantinos Koufogiannakis.</h2>
                 <h3>I love to build things for the web.</h3>
                 <div class="col-6">
-                    <p class="short_sum">My role is to write and style the front-end components creating
-                        beautifull
-                        digital experiences.
-                        Currently, I'm focused on acquiring new amazing skills in Web development.
+                    <p class="short_sum">My role is to write and style the front-end components creating beautiful
+                        digital experiences. Currently, I'm focused on acquiring new skills in Web development.
                     </p>
-                    <button type="button" class="btn btn-secondary " disabled>Resume <i class="fa-solid fa-lock"></i>
+                    <button type="button" class="btn btn-secondary" id="resume_button" disabled>Resume <i
+                            class="fa-solid fa-lock"></i>
                     </button>
                 </div>
             </div>
-            <div class="col-md-5 align-items-center">
-                <img class="my_image img-fluid" src="imgs/me_picture.jpg" alt="" width="300vw" height="300vh">
+            <div class="col-md-5 align-items-center images_space">
+                <img class="my_image img-fluid" src="imgs/pic.jpg" alt="My Picture" width="300vw" height="300vh">
             </div>
         </div>
     </div>
-    <div class="container-lg">
+    <!-- ------------- About Me ------------- -->
+    <div class="container-lg" id="About">
         <div class="row second_row">
-            <h2 class="heading">About me.</h2>
+            <h2 class="heading">About Me.</h2>
             <div class="col-md-6">
-                <p>My interest in programming started in my freshman year, as a Physics student.
-                    There, I was intrigued by the course <i>Computer Science I</i>
-                    so I decided to follow the specialization on Computers, Electronics, Automation &
-                    Telecommunications.
-                    During my studies I excelled in courses such us <i>Computer Science II, Computer
-                        Systems, Signals
-                        and Systems</i>
-                    with my biggest academic achievement being my diploma thesis "Dynamic Programming and
-                    its
-                    Application to
-                    Problems (with python)".</p>
+                <p>My interest in programming started in my freshman year, as a Physics student. There, I was intrigued
+                    by the course <i>Computer Science I</i> so I decided to follow the specialization on Computers,
+                    Electronics, Automation & Telecommunications. During my studies, I excelled in courses such as
+                    Computer Science II, Computer Systems, Signals and Systems. My biggest academic achievement was my
+                    diploma thesis "Dynamic Programming and its Application to Problems (with python)".</p>
                 <p> Last year, I worked as Software Test Analyst at <i><a class="intrasoft"
-                            href="https://www.netcompany-intrasoft.com/" target="_blank">Netcompany -
-                            Intrasoft</a></i>
-                    where my main
-                    task was to create and execute Test Cases/Scenarios. I kept track of the defects (with
-                    Jira) , used
-                    tools such us Postman & SoapUI and got familiar with the software development life
-                    cycle. Currently,
-                    I
-                    am focusing on expanding my web development horrizons and learning new skills.</p>
+                            href="https://www.netcompany-intrasoft.com/" target="_blank">Netcompany -Intrasoft</a></i>
+                    where my main task was to authore detailed test cases across various functional areas including UI,
+                    security, performance & regression testing. I successfully identified and documented the issues
+                    found during
+                    testing, maintaining Jira tickets for the software defects.</p>
+                <p> At this time, I am working at some personal projects
+                    exploring deeper into CSS and Javascript. </p>
             </div>
 
             <div class="col-md-6">
@@ -93,27 +93,27 @@
                     <div class="col-sm-6 col-md-12 col-lg-6">
                         <ul class="skills">
                             <a href="https://www.javascript.com/" target="_blank">
-                                <li class="li_javascript"><i class="fa-brands fa-square-js fa-4x"></i>
+                                <li class="li_javascript"><i class="fa-brands fa-square-js fa-5x"></i>
                                     Javascript</li>
                             </a>
                             <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank">
-                                <li class="li_html5"><i class="fa-brands fa-html5 fa-4x"></i> HTML5</li>
+                                <li class="li_html5"><i class="fa-brands fa-html5 fa-5x"></i> HTML5</li>
                             </a>
                             <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
-                                <li class="li_css3"><i class="fa-brands fa-css3-alt fa-4x"></i> CSS3</li>
+                                <li class="li_css3"><i class="fa-brands fa-css3-alt fa-5x"></i> CSS3</li>
                             </a>
                         </ul>
                     </div>
                     <div class="col-sm-6 col-md-12 col-lg-6">
                         <ul class="skills">
                             <a href="https://nodejs.org/en/" target="_blank">
-                                <li class="li_node"><i class="fa-brands fa-node fa-4x"></i> NodeJS</li>
+                                <li class="li_node"><i class="fa-brands fa-node fa-5x"></i> NodeJS</li>
                             </a>
                             <a href="https://reactjs.org/" target="_blank">
-                                <li class="li_react"><i class="fa-brands fa-react fa-4x"></i> React</li>
+                                <li class="li_react"><i class="fa-brands fa-react fa-5x"></i> React</li>
                             </a>
                             <a href="https://getbootstrap.com/" target="_blank">
-                                <li class="li_bootstrap"><i class="fa-brands fa-bootstrap fa-4x"></i>
+                                <li class="li_bootstrap"><i class="fa-brands fa-bootstrap fa-5x"></i>
                                     Bootstrap</li>
                             </a>
                         </ul>
@@ -122,51 +122,116 @@
             </div>
         </div>
     </div>
-    <! ------------- Projects ------------- -->
+    <!-- ------------- Projects ------------- -->
+    <div class="container-lg" id="Projects">
+        <div class="row third_row">
+            <h2 class="heading">Projects.</h2>
+            <p>Here are some of the personal projects, created while learning new Programming languages and libraries.
+            </p>
 
-        <! ------------- Contact ------------- -->
-            <div class="container-lg">
-                <div class="row third_row">
-                    <div class="contact-left col-lg-6">
-                        <h2 class="heading">Contact Me.</h2>
-                        <p>Getting in touch is easy!</p>
-                        <div>
-                            <a href="mailto:koufogiannakiskon@gmail.com" target="_blank">
-                                <li class="email contact_info">
-                                    <i class="fa-regular fa-envelope-open email fa-3x"></i>koufogiannakiskon@gmail.com
-                                </li>
-                            </a>
-                            <a href="https://linkedin.com/in/koufogiannakiskon" target="_blank">
-                                <li class="linkedin contact_info"><i class="fa-brands fa-linkedin fa-3x"></i>
-                                    /koufogiannakiskon</li>
-                            </a>
-                            <a href="https://github.com/koufojohn" target="_blank">
-                                <li class="github contact_info"><i class="fa-brands fa-github fa-3x"></i>
-                                    /koufojohn</li>
-                            </a>
-                        </div>
-
+            <div class="box">
+                <div class="imgBx">
+                    <img src="/imgs/MemoryGame.png">
+                </div>
+                <div class="content">
+                    <div>
+                        <h2>Memory Game</h2>
+                        <p>Memory game created with HTML, CSS and Vanilla Javascript.</p>
+                        <p>
+                            <a href="https://github.com/koufogiannakiskon/MemoryGame" target="_blank">
+                                <i class="fa-brands fa-github fa-2x"></i></a>
+                        </p>
                     </div>
-                    <div class="contact-right col-lg-6">
-                        <section class="contact_section">
-                            <p class="contact_form_paragraph">Feel free to contact me by submitting the form below and I
-                                will get back to you as soon as
-                                possible.</p>
-                            <div class="contact_form_container">
-                                <form action="#" class="contact_form">
-                                    <input type="name" class="contact_form_input" id="name" placeholder="Name" required>
-                                    <input type="email" class="contact_form_input" id="email" placeholder="Email"
-                                        required>
-                                    <textarea class="contact_form_msg" placeholder="Message" required></textarea>
-                                    <button type="submit" class="contact_form_btn"> Send </button>
-                                </form>
-                            </div>
-                        </section>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="/imgs/Foodapp.png">
+                </div>
+                <div class="content">
+                    <div>
+                        <h2>Food App</h2>
+                        <p>Developed using the React library and implementing multiple components.
+                        </p>
+                        <p>
+                            <a href="https://github.com/koufogiannakiskon/Food_App" target="_blank">
+                                <i class="fa-brands fa-github fa-2x"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="imgs/ToDoList.png">
+                </div>
+                <div class="content">
+                    <div>
+                        <h2>To-Do List</h2>
+                        <p>Building a To-Do List with HTML, CSS, and Javascript. In this project, I have used dynamic
+                            event listeners and LocalStorage to persist website data.
+                        </p>
+                        <p>
+                            <a href="https://github.com/koufogiannakiskon/ToDo-List" target="_blank">
+                                <i class="fa-brands fa-github fa-2x"></i></a>
+                        </p>
                     </div>
                 </div>
             </div>
 
+        </div>
+    </div>
+    <!-- ------------- Contact ------------- -->
+    <div class="container-lg" id="Contact">
+        <div class="row fourth_row">
+            <div class="contact-left col-lg-6">
+                <h2 class="heading">Contact Me.</h2>
+                <p>Getting in touch is easy!</p>
+                <div class="contact_carousel">
+                    <a href="mailto:koufogiannakiskon@gmail.com" target="_blank">
+                        <li class="email contact_info">
+                            <i class="fa-regular fa-envelope-open email fa-3x"></i>
+                            &nbsp; koufogiannakiskon@gmail.com
+                        </li>
+                    </a>
+                    <a href="https://linkedin.com/in/koufogiannakiskon" target="_blank">
+                        <li class="linkedin contact_info"><i class="fa-brands fa-linkedin fa-3x"></i>
+                            &nbsp; /koufogiannakiskon</li>
+                    </a>
+                    <a href="https://github.com/koufogiannakiskon" target="_blank">
+                        <li class="github contact_info"><i class="fa-brands fa-github fa-3x"></i>
+                            &nbsp; /koufogiannakiskon</li>
+                    </a>
+                </div>
+
+            </div>
+            <div class="contact-right col-lg-6">
+                <section class="contact_section">
+                    <p class="contact_form_paragraph">Feel free to contact me by submitting the form below and I
+                        will get back to you as soon as
+                        possible.</p>
+                    <div class="contact_form_container">
+                        <form class="contact_form" id="myForm">
+                            <input type="name" name="name" class="contact_form_input" id="name" placeholder="Name"
+                                required />
+                            <input type="email" name="email" class="contact_form_input" id="email" placeholder="Email"
+                                required />
+                            <textarea class="contact_form_msg" name="message" placeholder="Message" required></textarea>
+                        </form>
+                        <button class="contact_form_btn" onclick="SubForm()">Send</button>
+
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------- Footer ------------- -->
+    <footer class="light">
+        <div class="footer-content">
+            <p>© 2022 Copyright | Made with <i class="fa-sharp fa-solid fa-heart" style="color: red;"></i> by me.</p>
+        </div>
+    </footer>
 </body>
-<script src="darkMode.js"></script>
+<script src="js/darkMode.js"></script>
 
 </html>
