@@ -46,11 +46,11 @@ body.dark-theme {
 }
 
 img.logo {
-  content: url("/imgs/KK_black_letters.png");
+  content: url("../imgs/KK_black_letters.png");
 }
 
 nav.dark img.logo {
-  content: url("/imgs/KK_white_letters.png");
+  content: url("../imgs/KK_white_letters.png");
   transition: 0.5s;
 }
 

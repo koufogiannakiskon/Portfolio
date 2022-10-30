@@ -19,6 +19,5 @@ toggle.addEventListener('input', e => {
         nav.classList.add('light');
         footer.classList.remove('dark');
         footer.classList.add('light');
-
     }
 });
