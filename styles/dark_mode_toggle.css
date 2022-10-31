@@ -13,14 +13,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .darkToggle label::before {
   font: var(--fa-font-solid);
   content: "\f186";
   color: white;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .darkToggle input[type="checkbox"]:checked ~ label {
@@ -51,7 +51,7 @@ img.logo {
 
 nav.dark img.logo {
   content: url("../imgs/KK_white_letters.png");
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 nav.dark .nav-link {
@@ -74,34 +74,37 @@ body.dark-theme .intrasoft {
 /* Contact: */
 body.dark-theme .email {
   filter: drop-shadow(1px 1px 0px #bd8782);
-  transition: all 0.5s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 body.dark-theme .linkedin {
   filter: drop-shadow(1px 1px 0px #6a8db0);
-  transition: all 0.5s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 body.dark-theme .github {
   filter: drop-shadow(1px 1px 0px #a5a4a4);
-  transition: all 0.5s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 body.dark-theme input,
 body.dark-theme textarea {
   color: white;
-  transition: all 0.5s;
+  transition: all 0.3s;
 }
 
 body.dark-theme .contact_section {
   background-color: rgba(170, 174, 165, 0.4);
   box-shadow: 5px 5px 10px rgba(92, 92, 97, 0.3);
 }
-
-/* Contact: */
+body.dark-theme .contact_form_input::placeholder,
+body.dark-theme .contact_form_msg::placeholder {
+  color: #a5a4a4;
+}
+/* Footer */
 footer.dark {
   background-color: #082032;
-  transition: all 0.5s;
+  transition: all 0.3s;
 }
 
 footer.dark p {
