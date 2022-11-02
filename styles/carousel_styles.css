@@ -1,3 +1,5 @@
+/* Projects: */
+
 .third_row {
   justify-content: center;
   margin: 50px 0 50px 0;
@@ -105,11 +107,20 @@
   transform: translateY(0px);
 }
 
-.third_row div a {
+.third_row a.link_to_project {
+  transition: all 0.2s ease-in-out;
+}
+.third_row a.link_to_project:hover {
+  cursor: pointer;
+  color: white;
+  opacity: 0.6;
+}
+
+.third_row div a.link_to_github {
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
-.third_row div a:hover {
+.third_row div a.link_to_github:hover {
   color: white;
   opacity: 0.4;
 }
