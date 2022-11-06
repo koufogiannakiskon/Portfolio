@@ -74,17 +74,44 @@ img.logo {
 .hello_world {
   font-family: "Roboto Mono", monospace;
   font-weight: 600;
+  transform: translateY(-100vh);
+  animation: fall 0.4s forwards;
+}
+@keyframes fall {
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .introduce {
   font-size: medium;
   margin-bottom: 0;
+  transform: translateY(-100vh);
+  animation: fall 0.6s forwards;
+  animation-delay: 0.4;
 }
 
 .my_name {
   font-size: 45px;
   font-weight: 600;
   margin-top: 0;
+}
+.my_name .first_name {
+  display: inline-block;
+  transform: translateX(-100vw);
+  animation: fall 0.5s forwards;
+  animation-delay: 1s;
+}
+.my_name .last_name {
+  display: inline-block;
+  transform: translateX(-100vw);
+  animation: slideInLeft 0.5s forwards;
+  animation-delay: 1.4s;
+}
+@keyframes slideInLeft {
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .heading {
@@ -120,8 +147,25 @@ div img.my_image {
   margin-top: 20px;
   border-radius: 50%;
   border: 2px solid #7d6e83;
+  animation: fadeAndScale 2.5s cubic-bezier(0.39, -1.05, 0.58, 1.95);
+  transform-origin: center bottom;
+  animation-delay: -0.1s;
 }
 
+@keyframes fadeAndScale {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.75, 0.75, 1);
+  }
+  70% {
+    opacity: 0;
+    transform: scale3d(0.75, 0.75, 1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}
 .intrasoft {
   text-decoration: none;
   color: rgb(11, 16, 74);
