@@ -37,14 +37,17 @@
   filter: drop-shadow(3px 3px 2px #7b3d5b);
 }
 
-.li_node {
+.li_sql {
   transition: 0.2s;
-  color: #68a063;
+  color: #1e61a8;
+}
+.li_sql span {
+  vertical-align: bottom;
 }
 
-.li_node:hover {
+.li_sql:hover {
   cursor: pointer;
-  filter: drop-shadow(3px 3px 2px #466b42);
+  filter: drop-shadow(3px 3px 2px #34485d);
 }
 
 .li_react {
