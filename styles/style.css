@@ -176,11 +176,25 @@ div img.my_image {
     transform: scale3d(1, 1, 1);
   }
 }
-.intrasoft {
+
+article.experience_paragraph {
+  border-left: 1.5px solid var(--secondary-light-color);
+  padding-left: 1%;
+  margin-top: 2%;
+}
+article.experience_paragraph:hover {
+  border-left: 1.7px solid gray;
+}
+
+.date {
+  font-weight: bold;
+}
+
+.company-name {
   text-decoration: none;
   color: rgb(11, 16, 74);
   cursor: pointer;
-  transition: 0.3s;
+  transition: all 0.3s ease-in;
 }
 
 /* Contact Info*/
