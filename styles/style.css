@@ -277,9 +277,14 @@ p.contact_form_paragraph {
   color: green;
   font-weight: 500;
 }
-body.dark-theme .contact_form_container p {
+body .contact_form_container p.success {
   margin: 5px;
-  color: rgb(155, 248, 155);
+  color: rgb(129, 238, 102);
+  font-weight: 500;
+}
+body .contact_form_container p.error {
+  margin: 5px;
+  color: rgb(231, 38, 38);
   font-weight: 500;
 }
 

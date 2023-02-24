@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="styles/dark_mode_toggle.css">
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    <script src="js/submitForm.js"></script>
     <script src="js/fadeOnScrolling.js"></script>
 </head>
 
@@ -166,10 +165,12 @@
                 </div>
 
                 <div class="content">
-                    <a class="link_to_project" href="https://koufogiannakiskon.github.io/recipe_search/" target="_blank">
+                    <a class="link_to_project" href="https://koufogiannakiskon.github.io/recipe_search/"
+                        target="_blank">
                         <div>
                             <h2> Recipes </h2>
-                            <p>This project was created using Redux Slices and Actions in order to share multiple points of data across components.
+                            <p>This project was created using Redux Slices and Actions in order to share multiple points
+                                of data across components.
                             </p>
                             <p>
                                 <a class="link_to_github" href="https://github.com/koufogiannakiskon/recipe_search/"
@@ -255,12 +256,12 @@
                         will get back to you as soon as
                         possible.</p>
                     <div class="contact_form_container">
-                        <form class="contact_form" id="myForm">
-                            <input type="name" name="name" class="contact_form_input" id="name" placeholder="Name"
-                                required />
-                            <input type="email" name="email" class="contact_form_input" id="email" placeholder="Email"
-                                required />
-                            <textarea class="contact_form_msg" name="message" placeholder="Message" required></textarea>
+                        <form class="contact_form" id="myForm" required>
+                            <input type="name" name="name" class="contact_form_input" id="name_form" placeholder="Name*"
+                                 />
+                            <input type="email" name="email" class="contact_form_input" id="email_form"
+                                placeholder="Email*"  />
+                            <textarea class="contact_form_msg" name="message" placeholder="Message" ></textarea>
                         </form>
                         <button class="contact_form_btn" onclick="SubForm()">Send</button>
 
@@ -279,5 +280,6 @@
 </body>
 <script src="/js/darkMode.js"></script>
 <script src="/js/shadowEffect.js"></script>
+<script src="js/submitForm.js"></script>
 
 </html>
