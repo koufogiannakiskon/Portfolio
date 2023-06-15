@@ -190,11 +190,22 @@ article.experience_paragraph:hover {
   font-weight: bold;
 }
 
-.company-name {
+.intrasoft,
+.accenture,
+.intrasoft:hover,
+.accenture:hover {
   text-decoration: none;
-  color: rgb(11, 16, 74);
   cursor: pointer;
   transition: all 0.3s ease-in;
+  color: black;
+}
+
+.intrasoft {
+  color: darkblue;
+}
+
+.accenture {
+  color: rgb(183, 7, 183);
 }
 
 /* Contact Info*/
